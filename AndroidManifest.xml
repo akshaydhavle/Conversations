@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest android:versionCode="1" android:versionName="1.0"
+    package="com.conversations" xmlns:android="http://schemas.android.com/apk/res/android">
+    <application android:debuggable="true" android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:name=".ListPeople">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".EditNote">
+            <intent-filter>
+                <action android:name="android.intent.action.EDITNOTE"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".NewPerson"/>
+    </application>
+    <uses-sdk android:minSdkVersion="7"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+</manifest>
